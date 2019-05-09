@@ -1,9 +1,10 @@
-% initpop.m�����Ĺ�����ʵ��Ⱥ��ĳ�ʼ����
-% popsize��ʾȺ��Ĵ�С��chromlength��ʾȾɫ��ĳ���(��ֵ���ĳ���)��
-% ���ȴ�Сȡ���ڱ����Ķ����Ʊ���ĳ���(�ڱ�����ȡ10λ)��
+% initpop.m函数的功能是实现群体的初始化，
+% popsize表示群体的大小，chromlength表示染色体的长度(二值数的长度)，
+% 长度大小取决于变量的二进制编码的长度(在本例中取10位)。
 
-%��ʼ��
-function pop=initpop(popsize,chromlength) 
-pop=round(rand(popsize,chromlength)); 
-% rand�������ÿ����ԪΪ {0,1} ����Ϊpopsize������Ϊchromlength�ľ���
-% round�Ծ����ÿ����Ԫ����Բ�������������ĳ�ʼ��Ⱥ��
+%初始化
+function pop=initpop(pop, w, c, W) 
+
+pop=round(rand(pop.size, len(w)); 
+% rand随机产生每个单元为 {0,1} 行数为popsize，列数为chromlength的矩阵，
+% round对矩阵的每个单元进行圆整。这样产生的初始种群。
